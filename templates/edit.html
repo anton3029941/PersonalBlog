@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='edit.css') }}">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>{{ title }}</h1>
+            <form action="/admin/articles/{{ title }}/edit/submit" method="POST">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" value="{{ title }}">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" value="{{ date }}">
+                <label for="content">Content:</label>
+                <textarea id="content" name="content">{{ content }}</textarea>
+                <button type="submit">Save</button>
+                <button onclick="history.back()" type="button">Back</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

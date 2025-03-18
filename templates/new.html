@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Article</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>New Article</h1>
+            <form action="/admin/new/create" method="POST">
+                <label for="title">Article Title</label>
+                <input type="text" name="title" id="title", required>
+                <label for="title">Publishing Date</label>
+                <input type="date" name="date" id="date" >
+                <label>Content</label>
+                <textarea name="content" id="content", required></textarea>
+                <button type="submit">Submit</button>
+                <button onclick="window.location.href='/admin'" type="button">Back</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

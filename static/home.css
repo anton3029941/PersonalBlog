@@ -1,0 +1,38 @@
+body {
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    translate: -100px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+h1 {
+    color: #333;
+    margin-top: 50px;
+    margin-right: 250px;
+}
+#titles {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    font-size: 25px;
+}
+.date {
+    margin-left: 300px;
+}
+button {
+    height: 40px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}

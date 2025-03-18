@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='article.css') }}">
+    <style>
+        .buttons {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>{{ title }}</h1>
+            <p>{{ date }}</p>
+            <p>{{ content }}</p>
+            <div class="buttons">
+                <button onclick="window.location.href='/admin'" type="button">Back</button>
+                <button onclick="window.location.href='/admin/articles/{{ title }}/edit'" type="button">Edit</button>
+                <button onclick="window.location.href='/admin/articles/{{ title }}/delete'" type="button">Delete</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
