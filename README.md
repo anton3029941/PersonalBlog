@@ -50,5 +50,6 @@ PersonalBlog/
 ```
 
 ## Author
-anton3029941
+anton3029941  
+See license in LICENSE
 
